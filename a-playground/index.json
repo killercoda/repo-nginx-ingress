@@ -1,0 +1,25 @@
+{
+  "title": "A Playground",
+  "description": "This playground has the Nginx Ingress Controller installed on Kubernetes",
+  "details": {
+    "finish": {
+      "text": "finish.md"
+    },
+    "intro": {
+      "text": "init/init.md",
+      "courseData": "init/background.sh",
+      "code": "init/foreground.sh"
+    },
+    "assets": {
+      "host01": [
+        {"file": "init.sh", "target": "/ks", "chmod": "+x"},
+        {"file": "k8s.sh", "target": "/ks", "chmod": "+x"},
+        {"file": "wait-init.sh", "target": "/ks", "chmod": "+x"},
+        {"file": "init.yaml", "target": "/ks", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node-ubuntu20.04"
+  }
+}
